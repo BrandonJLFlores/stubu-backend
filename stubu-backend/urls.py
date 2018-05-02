@@ -19,6 +19,9 @@ from django.conf.urls import url
 from . import views
 urlpatterns = [
 url(r'^admin/', admin.site.urls),
-url(r'^$',views.singIn),
+url(r'^$',views.signIn),
 url(r'^postsign/',views.postsign),
+url(r'^logout/',views.logout,name="log"),#access sa logout onclick button by name
+url(r'^signup/',views.signUp,name="signup"),#access sa logout onclick button by name
+url(r'^postsignup/',views.postsignup,name="postsignup"),#access sa logout onclick button by name
 ]

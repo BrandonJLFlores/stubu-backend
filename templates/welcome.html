@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+    <style>
+        div{
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+    </style>
 </head>
 <body>
-{% csrf_token %}
+
     Welcome {{e}}
 {#https://stubu-2018.firebaseapp.com/__/auth/handler#}
+<div>
+   <button type="button" onclick="location.href='{% url 'log'%}'">Logout</button>{#    naa sa urls gicall#}
+</div>
+
 </body>
 </html>
